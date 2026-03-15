@@ -1,0 +1,55 @@
+# Виртуальное окружение
+venv/
+env/
+.env
+.venv/
+
+# Файлы конфиденциальных данных
+.env
+*.env
+config.py.local
+
+# База данных
+*.db
+*.sqlite3
+*.sqlite
+
+# Логи
+logs/
+*.log
+
+# Кэш Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.coverage
+htmlcov/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Установочные файлы
+*.exe
+*.msi
+*.dmg
+*.pkg
+
+# Временные файлы
+temp/
+tmp/
+*.tmp
+*.temp
+
+# Файлы с секретами
+**/secrets.json
+**/credentials.json
+
+# Tesseract временные файлы
+*.tesscache

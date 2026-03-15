@@ -1,0 +1,12 @@
+aiogram==3.4.1
+aiomysql==0.2.0
+pytesseract==0.3.10
+Pillow==10.1.0
+python-dotenv==1.0.0
+aiofiles==23.2.1
+sqlalchemy==2.0.23
+alembic==1.12.1
+cryptography==41.0.7
+pydantic==2.5.0
+schedule==1.2.0
+redis==5.0.1
