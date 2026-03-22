@@ -16,11 +16,20 @@ class Config:
     LOG_LEVEL = os.getenv('LOG_LEVEL', 'INFO')
 
     # Настройки Pomodoro
-    POMODORO_WORK_TIME = 25  # минут
-    POMODORO_BREAK_TIME = 5  # минут
+    POMODORO_WORK_TIME = int(os.getenv('POMODORO_WORK_TIME', 25))
+    POMODORO_BREAK_TIME = int(os.getenv('POMODORO_BREAK_TIME', 5))
 
     # Настройки повторения ошибок
-    ERROR_REVIEW_INTERVALS = [1, 3, 7, 14, 30]  # дни для повторения
+    ERROR_REVIEW_INTERVALS = [1, 3, 7, 14, 30]
+
+    # Настройки LeetCode
+    LEETCODE_API_URL = os.getenv('LEETCODE_API_URL', 'https://leetcode.com/graphql')
+
+    # Настройки для Team Up
+    MAX_TEAM_MEMBERS = int(os.getenv('MAX_TEAM_MEMBERS', 5))
+
+    # Настройки для интервью
+    INTERVIEW_QUESTIONS_PER_SESSION = int(os.getenv('INTERVIEW_QUESTIONS_PER_SESSION', 5))
 
 
 config = Config()

@@ -46,10 +46,3 @@ temp/
 tmp/
 *.tmp
 *.temp
-
-# Файлы с секретами
-**/secrets.json
-**/credentials.json
-
-# Tesseract временные файлы
-*.tesscache
